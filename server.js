@@ -15,13 +15,16 @@ app.get('/article-one',function(req,res){
 });
 
 app.get('/article-two',function(req,res){
-    res.send('article-two will be served soon');
+    //res.send('article-two will be served soon');
+    res.sendfile(path.join(_dirname,'ui','article-three.html'));
 }
 );
 
 app.get('/article-three',function(req,res){
-    res.send('article three will be server here')
+    //res.send('article three will be server here')
+    res.sendfile(path.join(_dirname,'ui','article-thee.html'));
 });
+
 
 
 app.get('/ui/style.css', function (req, res) {
