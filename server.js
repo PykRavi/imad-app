@@ -16,13 +16,13 @@ app.get('/article-one',function(req,res){
 
 app.get('/article-two',function(req,res){
     //res.send('article-two will be served soon');
-    res.sendfile(path.join(_dirname,'ui','article-three.html'));
+    res.sendfile(path.join(__dirname,'ui','article-three.html'));
 }
 );
 
 app.get('/article-three',function(req,res){
     //res.send('article three will be server here')
-    res.sendfile(path.join(_dirname,'ui','article-thee.html'));
+    res.sendfile(path.join(__dirname,'ui','article-thee.html'));
 });
 
 
