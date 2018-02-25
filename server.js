@@ -19,7 +19,7 @@ app.get('/article-two',function(req,res){
 }
 );
 
-app.get('article-three',function(req,res){
+app.get('/article-three',function(req,res){
     res.send('article three will be server here')
 });
 
