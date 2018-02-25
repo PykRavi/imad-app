@@ -39,8 +39,7 @@ function createtemplate (data)
         </body>
         </html>
                         };
-    
-return HtmlTemplate;
+    return HtmlTemplate;
 }
 
 app.get('/', function (req, res) {
@@ -48,9 +47,10 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one',function(req,res){
-  // res.send('article one will be served soon') 
+  
+  res.send('article one will be served soon') 
 // res.sendFile(path.join(__dirname,'article-one.html'));
-res.send(createtemplate(ArticleOne);
+//res.send(createtemplate(ArticleOne);
 });
 
 app.get('/article-two',function(req,res){
