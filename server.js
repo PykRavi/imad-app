@@ -68,6 +68,12 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
+counter =0;
+app.get('/counter',function(req,res){
+   counter = counter + 1;
+   res.send(Counter);
+});
+
 app.get('/:articleName',function(req,res){
   articleName = req.params.articleName;
  // res.send('article one will be served soon') 
