@@ -4,10 +4,11 @@ button.onclick = function (){
     
 };
 var img = getElementByid('getimg');
+marginLeft = 100
 function MoveLeft()
 {
-    marginLeft=marginLeft - 1;
-    img.style.MarginLeft =marginLeft + "px";
+    marginLeft = marginLeft - 1;
+    img.style.marginLeft = marginLeft + "px";
 }
 img.onclick = function(){
     var interval = Setinterval(MoveLeft,50);
