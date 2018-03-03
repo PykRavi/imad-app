@@ -8,16 +8,15 @@ button.onclick = function (){
             if ( request.status === 200 ) {
                 var cntr = request.responseText;
                 var span = document.getElementById('counter');
-                span.innerHTML = cntr.toString();
-                
+                span.innerHTML = "Pinky";
             }
         }
-    }
+    };
 
      
      request. open('GET','/counter',true);
      request.send(null);
-}
+};
 
 var img = document.getElementById('getimg');
 var marginLeft = 100;
