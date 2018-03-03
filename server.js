@@ -68,11 +68,11 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:ArticleName',function(req,res){
+app.get('/:articleName',function(req,res){
   
  // res.send('article one will be served soon') 
 // res.sendFile(path.join(__dirname,'article-one.html'));
-res.send(createtemplate(articles[ArticleName]));
+res.send(createtemplate(articles[articleName]));
 });
 
 app.get('/article-two',function(req,res){
