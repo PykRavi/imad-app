@@ -72,7 +72,7 @@ app.get('/:ArticleName',function(req,res){
   
  // res.send('article one will be served soon') 
 // res.sendFile(path.join(__dirname,'article-one.html'));
-res.send(createtemplate(articles.ArticleName));
+res.send(createtemplate(articles[ArticleName]));
 });
 
 app.get('/article-two',function(req,res){
