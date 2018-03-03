@@ -1,6 +1,11 @@
 console.log('Loaded!');
 var button = document.getElementById('button');
 button.onclick = function (){
+    var request = new XMLHttpRequest();
+    
+    
+    document.getElementById('counter').InnerHTML = counter;
+    
     
 };
 var img = document.getElementById('getimg');
@@ -13,3 +18,5 @@ function MoveLeft()
 img.onclick = function(){
     setInterval(MoveLeft,50);
 };
+
+
