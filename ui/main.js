@@ -4,6 +4,7 @@ button.onclick = function (){
     var request = new XMLHttpRequest();
     
     request.onreadystatechange = function(){
+        console.log('jump');
         if ( request.readystate === XMLHttpRequest.DONE ) {
             if ( request.status === 200 ) {
                 console.log('double');
