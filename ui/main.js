@@ -8,7 +8,7 @@ button.onclick = function (){
             if ( request.status === 200 ) {
                 console.log('double');
                 var cntr = request.responseText;
-                var span = document.getElementById('counter');
+                var span = document.getElementById('cter');
                 span.innerHTML = "Pinky";
             }
         }
