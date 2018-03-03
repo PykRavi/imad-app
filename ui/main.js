@@ -1,9 +1,9 @@
 console.log('Loaded!');
-var button = getElementByid('button');
+var button = document.getElementByid('button');
 button.onclick = function (){
     
 };
-var img = getElementByid('getimg');
+var img = document.getElementByid('getimg');
 var marginLeft = 100;
 function MoveLeft()
 {
