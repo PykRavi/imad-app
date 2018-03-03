@@ -3,26 +3,22 @@ var button = document.getElementById('button');
 button.onclick = function (){
     var request = new XMLHttpRequest();
     
-    request.onreadystatechange = function () {
-        if ( request.readystate === XMLHttpRequest.DONE ) 
-        {
-            console.log('bla');
+    request.onreadystatechange = function(){
+        if ( request.readystate === XMLHttpRequest.DONE ) {
             if ( request.status === 200 ) {
                 var cntr = request.responseText;
-                console.log('came here');
                 var span = document.getElementById('counter');
-               span.innerHTML = Cntr.toString();
+                span.innerHTML = cntr.toString();
+                
             }
         }
-        
-    };
-    
-    request.open('GET','/counter',true);
-    request.send(null);
-    
-    
-    
-};
+    }
+
+     
+     request. open('GET','/counter',true);
+     request.send(null);
+}
+
 var img = document.getElementById('getimg');
 var marginLeft = 100;
 function MoveLeft()
