@@ -8,7 +8,7 @@ button.onclick = function (){
         {
             if ( request.status == 200 ) {
                 var cntr = request.responseText;
-                console.log('${cntr}');
+                console.log('came here');
                 var span = document.getElementById('counter');
                span.innerHTML = Cntr.toString();
             }
