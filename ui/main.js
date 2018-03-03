@@ -14,7 +14,7 @@ button.onclick = function (){
         
     };
     
-    request.open('GET','//http://pykravi05.imad.hasura-app.io/counter',true);
+    request.open('GET','pykravi05.imad.hasura-app.io/counter',true);
     request.send(null);
     
     
