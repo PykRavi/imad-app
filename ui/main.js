@@ -9,7 +9,7 @@ button.onclick = function (){
             if ( request.status == 200 ) {
                 var cntr = request.responseText;
                 console.log('${cntr}');
-                var span = document.getElementById('counter')
+                var span = document.getElementById('counter');
                span.innerHTML = Cntr.toString();
             }
         }
