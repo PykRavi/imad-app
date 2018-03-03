@@ -6,7 +6,7 @@ button.onclick = function (){
 var img = getElementByid('getimg');
 function MoveLeft()
 {
-    marginLeft=marginLeft -1;
+    marginLeft=marginLeft - 1;
     img.style.MarginLeft =marginLeft + "px";
 }
 img.onclick = function(){
