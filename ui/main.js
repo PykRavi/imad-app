@@ -5,7 +5,7 @@ button.onclick = function (){
     
     request.onreadystatechange = function(){
         console.log('jump');
-        if ( request.readystate === XMLHttpRequest.DONE ) {
+        if ( request.readyState === XMLHttpRequest.DONE ) {
             if ( request.status === 200 ) {
                 console.log('double');
                 var cntr = request.responseText;
