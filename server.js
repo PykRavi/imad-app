@@ -69,7 +69,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/:articleName',function(req,res){
-  
+  console.log(articleName);
  // res.send('article one will be served soon') 
 // res.sendFile(path.join(__dirname,'article-one.html'));
 res.send(createtemplate(articles[articleName]));
