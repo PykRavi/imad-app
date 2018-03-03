@@ -10,7 +10,6 @@ var ArticleOne= {
     heading:"Article-one",
     date:"Feb 16",
     content:`
-            </div>
             <div>
                 <p>This is the content of my article</p>
             </div>`
