@@ -75,19 +75,6 @@ app.get('/:articleName',function(req,res){
 res.send(createtemplate(articles[articleName]));
 });
 
-app.get('/article-two',function(req,res){
-    //res.send('article-two will be served soon');
-   // res.sendfile(path.join(__dirname,'ui','article-two.html'));
-  // res.send(createtemplate(Articletwo));
-}
-);
-
-app.get('/article-three',function(req,res){
-    //res.send('article three will be server here')
-   // res.sendfile(path.join(__dirname,'ui','article-three.html'));
- //  res.send(createtemplate(Articlethree));
-});
-
 
 
 app.get('/ui/style.css', function (req, res) {
