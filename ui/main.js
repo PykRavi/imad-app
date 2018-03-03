@@ -9,7 +9,7 @@ button.onclick = function (){
                 console.log('double');
                 var cntr = request.responseText;
                 var span = document.getElementById('cter');
-                span.innerHTML = "Pinky";
+                span.innerHTML = cntr.toString();
             }
         }
     };
