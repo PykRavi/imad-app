@@ -17,7 +17,7 @@ button.onclick = function (){
     };
     
     request.open('GET','/counter',true);
-    request.send(null);
+    
     
     
     
