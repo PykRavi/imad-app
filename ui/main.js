@@ -6,6 +6,7 @@ button.onclick = function (){
     request.onreadystatechange = function(){
         if ( request.readystate === XMLHttpRequest.DONE ) {
             if ( request.status === 200 ) {
+                console.log('double');
                 var cntr = request.responseText;
                 var span = document.getElementById('counter');
                 span.innerHTML = "Pinky";
