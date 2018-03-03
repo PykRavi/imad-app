@@ -6,15 +6,15 @@ var app = express();
 app.use(morgan('combined'));
 
 var ArticleOne= {
-    title:"Article-One"
-    heading:"Article-one"
-    date:"Feb 16"
+    title:"Article-One",
+    heading:"Article-one",
+    date:"Feb 16",
     content:`
             </div>
             <div>
                 <p>This is the content of my article</p>
             </div>`
-}
+};
 
 function createtemplate (data)
 {
@@ -22,7 +22,7 @@ function createtemplate (data)
     var heading = data.heading;
     var date = data.date
     var content =data.content;
-        var HtmlTemplate = {
+        var HtmlTemplate = `{
         <html>
         <head>
         <title> ${title} </title>
@@ -38,7 +38,7 @@ function createtemplate (data)
         
         </body>
         </html>
-                        };
+                        };`
     return HtmlTemplate;
 }
 
