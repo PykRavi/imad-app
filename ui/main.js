@@ -9,7 +9,7 @@ button.onclick = function (){
             if ( request.status == 200 ) {
                 var counter = request.responseText;
                 console.log('${counter}');
-                document.getElementById('counter').InnerHTML = Counter.toString();
+                document.getElementById('counter').innerHTML = Counter.toString();
             }
         }
         
