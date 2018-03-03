@@ -49,18 +49,20 @@ app.get('/article-one',function(req,res){
   
   res.send('article one will be served soon') 
 // res.sendFile(path.join(__dirname,'article-one.html'));
-//res.send(createtemplate(ArticleOne);
+res.send(createtemplate(ArticleOne));
 });
 
 app.get('/article-two',function(req,res){
     //res.send('article-two will be served soon');
-    res.sendfile(path.join(__dirname,'ui','article-two.html'));
+   // res.sendfile(path.join(__dirname,'ui','article-two.html'));
+  // res.send(createtemplate(Articletwo));
 }
 );
 
 app.get('/article-three',function(req,res){
     //res.send('article three will be server here')
-    res.sendfile(path.join(__dirname,'ui','article-three.html'));
+   // res.sendfile(path.join(__dirname,'ui','article-three.html'));
+ //  res.send(createtemplate(Articlethree));
 });
 
 
