@@ -69,7 +69,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/ui/main.js',function(req,res){
-    res.sendfile(Path.join(__dirname,'ui','main.js'));
+    res.sendFile(Path.join(__dirname,'ui','main.js'));
 });
 counter =0;
 app.get('/counter',function(req,res){
