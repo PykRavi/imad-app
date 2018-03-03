@@ -7,9 +7,9 @@ button.onclick = function (){
         if ( request.readystate === XMLHttpRequest.DONE ) 
         {
             if ( request.status == 200 ) {
-                var counter = request.responseText;
-                console.log('${counter}');
-                document.getElementById('counter').innerHTML = Counter.toString();
+                var cntr = request.responseText;
+                console.log('${cntr}');
+                document.getElementById('counter').innerHTML = Cntr.toString();
             }
         }
         
