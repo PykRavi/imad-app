@@ -4,7 +4,7 @@ button.onclick = function (){
     
 };
 var img = getElementByid('getimg');
-marginLeft = 100
+var marginLeft = 100;
 function MoveLeft()
 {
     marginLeft = marginLeft - 1;
